@@ -40,7 +40,7 @@ if uploaded_video is not None:
     fps = cap.get(cv2.CAP_PROP_FPS)
 
     # Gunakan codec yang lebih kompatibel
-    fourcc = cv2.VideoWriter_fourcc(*'avc1')
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(out_path, fourcc, fps, (width, height))
 
     # Proses frame demi frame
