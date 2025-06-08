@@ -1,3 +1,7 @@
+import sys
+
+sys.modules.pop("torch.classes", None)
+
 import streamlit as st
 from ultralytics import YOLO
 import tempfile
